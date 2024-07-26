@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      letterSpacing: {
+        '-4': '-0.04em', // Custom value for -4%
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

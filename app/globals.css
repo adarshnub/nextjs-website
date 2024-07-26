@@ -96,3 +96,31 @@
 .nav-item:hover .underline {
   transform: scaleX(1);
 }
+
+/* hero text sale outline */
+.text-outline {
+  position: relative;
+  color: white; /* Text color inside */
+  font-weight: 500;
+  font-size: 100px;
+  letter-spacing: -0.055em;
+}
+
+.text-outline::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #484848; /* Outline color */
+  z-index: -1;
+  font-weight: 500;
+  font-size: 100px;
+  letter-spacing: -0.055em;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 
+    -0.6px -0.6px 0 #000,  
+     0.6px -0.6px 0 #000,
+    -0.6px  0.6px 0 #000,
+     0.6px  0.6px 0 #000;
+}
