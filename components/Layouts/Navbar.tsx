@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <section className="hidden w-full justify-between bg-transparent px-[5vw] py-[50px] lg:flex">
+      <section className="hidden w-full justify-between bg-transparent px-[5vw] py-[40px] lg:flex">
         <Link href="/">
           <Image src={logo} alt="logo" width={64} height={31} />
         </Link>
