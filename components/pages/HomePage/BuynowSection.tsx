@@ -2,6 +2,8 @@ import React from "react";
 import bg from "@/assets/HomePage/slider3.png";
 import Image from "next/image";
 import { volkhov } from "@/app/fonts";
+import { FeatureArry } from "@/lib/constants/Features";
+import FeatureCard from "./FeatureCard";
 
 const BuynowSection = () => {
   return (
@@ -38,6 +40,12 @@ const BuynowSection = () => {
             Buy Now
           </div>
         </div>
+      </div>
+
+      <div className="w-full grid grid-cols-2 gap-x-[20vw] lg:gap-x-[40px] gap-y-[8px] lg:grid-cols-4 my-[72px] place-items-center">
+        {FeatureArry.map((item, index) => (
+          <FeatureCard key={index} item={item} />
+        ))}
       </div>
     </section>
   );
