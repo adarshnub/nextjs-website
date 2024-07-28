@@ -38,7 +38,7 @@ export default function TestimonialMobileCarousel() {
         {cards.map((card) => (
           <div
             key={card.title}
-            className="bg-white rounded-lg p-[10px]  shadow-xl w-full "
+            className="bg-white rounded-lg p-[10px] py-[20px]  shadow-xl w-full "
           >
           <div className="flex w-full justify-between gap-[24px]">
           
