@@ -5,6 +5,17 @@ import p4 from "@/assets/HomePage/p4.png";
 import p5 from "@/assets/HomePage/p5.png";
 import p6 from "@/assets/HomePage/p6.png";
 
+export type ProductType = {
+  item: {
+    icon: any;
+    rating: string;
+    title: string;
+    description: string;
+    price: string;
+    status: string;
+  };
+};
+
 export const Products = [
   {
     icon: p1,
@@ -12,7 +23,7 @@ export const Products = [
     title: "Fabric Chair",
     description: "Al Karam",
     price: "$95.50",
-    status: "$95.50",
+    status: "Almost Sold Out",
   },
   {
     icon: p2,
@@ -20,7 +31,7 @@ export const Products = [
     title: "Fabric Chair",
     description: "Al Karam",
     price: "$95.50",
-    status: "$95.50",
+    status: "Almost Sold Out",
   },
   {
     icon: p3,
@@ -28,7 +39,7 @@ export const Products = [
     title: "Fabric Chair",
     description: "Al Karam",
     price: "$95.50",
-    status: "$95.50",
+    status: "Almost Sold Out",
   },
   {
     icon: p4,
@@ -36,7 +47,7 @@ export const Products = [
     title: "Fabric Chair",
     description: "Al Karam",
     price: "$95.50",
-    status: "$95.50",
+    status: "Almost Sold Out",
   },
   {
     icon: p5,
@@ -44,14 +55,14 @@ export const Products = [
     title: "Fabric Chair",
     description: "Al Karam",
     price: "$95.50",
-    status: "$95.50",
+    status: "Almost Sold Out",
   },
   {
-    icon:p6,
-    rating:"2",
-    title:"Fabric Chair",
-    description:"Al Karam",
-    price:"$95.50",
-    status:"$95.50"
-}
+    icon: p6,
+    rating: "2",
+    title: "Fabric Chair",
+    description: "Al Karam",
+    price: "$95.50",
+    status: "Almost Sold Out",
+  },
 ];

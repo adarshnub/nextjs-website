@@ -1,0 +1,68 @@
+/* Carousel.module.css */
+
+.slidesWrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+  }
+  
+  .slide {
+    flex: 0 0 33.3333%; /* Show 3 slides at a time */
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    text-align: center;
+    /* background-color: #ddd; */
+    border-radius: 10px; /* Rounded corners for slides */
+  }
+  
+  .focused {
+    transform: scale(1.3); /* Larger scale for the focused slide */
+    z-index: 1; /* Ensure the focused slide is above the others */
+    width: 50%; /* Larger width for the focused slide */
+    height: auto; /* Adjust height accordingly */
+    /* background-color: #aaa;  */
+  }
+  
+  .arrow {
+    /* background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    padding: 10px; */
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2; /* Ensure arrows are above other content */
+  }
+  
+  .arrow:hover {
+    background-color: #ccc;
+  }
+  
+  .prev {
+    left: 10px; /* Adjust position as needed */
+  }
+  
+  .next {
+    left: 50px; /* Adjust position as needed */
+  }
+  
+  .dot {
+    background-color: #B6B6B6;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 2px solid transparent; /* Default border */
+    cursor: pointer;
+  }
+  
+  .dotActive {
+    background-color: black; 
+    border: 6px solid #B6B6B6; /* Extra border for the active dot */
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: 719px) {
+    .slide {
+      flex: 0 0 100%; /* Show 1 slide at a time */
+    }
+  }
+  
